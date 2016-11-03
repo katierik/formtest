@@ -1,0 +1,59 @@
+.questionblock{
+    display:flex;
+    flex-direction: column;
+}
+
+.question{
+
+}
+
+
+.long input{
+    max-width:46em;
+}
+
+.short input{
+    max-width:5em;
+}
+
+label{
+    display:inline-block; 
+    padding-bottom:7px;
+    width:220px;
+}
+
+
+.row label{
+    display:inline-block; 
+    padding-bottom:7px;
+    width:220px;
+}
+
+.row div{
+    padding-right:14px;
+}
+
+.part{
+    display:block;
+    padding-bottom:14px;
+}
+
+.checkbox label{
+    order:1;
+}
+
+.checkbox input{
+    order:2;
+}
+
+.radio .part{
+    display:flex;
+}
+
+.smartCondensed {
+    display:none !important;
+}
+
+.noSmartCondensed {
+    
+}
