@@ -1,0 +1,87 @@
+form{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.questionblock{
+    display:flex;
+    flex-direction: column;
+    width:47%;
+    max-width:550px;
+    margin-right:14px;
+}
+
+.questionblock:nth-child(3n) {
+  page-break-after: always; /* CSS 2.1 syntax */
+  break-after: always; /* New syntax */
+}
+
+.question{
+
+}
+
+.long {
+    max-width:46em;
+}
+
+.long input{
+    max-width:46em;
+}
+
+.short input{
+    max-width:5em;
+}
+
+label{
+    display:block; 
+    padding-bottom:7px;
+    width:100%;
+}
+/* When things need to be displayed in a single row */
+.row{
+    display: flex;
+    flex-direction:column;
+    width:100%;
+}
+
+.row label{
+    display:block;
+    padding-bottom:7px;
+    width:100%;
+}
+
+.row input{
+    max-width:22em;
+}
+
+.row div{
+    padding-right:14px;
+}
+
+.part{
+    display:block;
+    padding-bottom:14px;
+}
+
+/* Because we want the data to "flow" not be tight in a "row" hide all the "rows" versions and show the "flows" versions */
+.smartCondensed {
+    display:none !important;
+}
+
+.noSmartCondensed {
+    
+}
+
+#content{
+    position:relative;
+}
+
+button{
+    position:absolute;
+    bottom:0;
+    right:0;
+    margin-bottom:-5px;
+}
+
+

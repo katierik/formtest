@@ -1,0 +1,49 @@
+.questionblock{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width:1100px;
+}
+
+.question{
+    width:48%;
+    padding-right:14px;
+    padding-bottom:14px;
+}
+
+/*
+.long {
+    max-width:46em;
+}
+
+.long input{
+    max-width:46em;
+}*/
+
+.short input{
+    max-width:5em;
+}
+
+label{
+    display:block; 
+    padding-bottom:7px;
+    width:100%;
+}
+
+
+/* Because we want the data to "flow" not be tight in a "row" hide all the "rows" versions and show the "flows" versions */
+.smartCondensed {
+    display:none !important;
+}
+
+.noSmartCondensed {
+    
+}
+
+.radioGroup{
+    display:flex;
+}
+
+
+
+

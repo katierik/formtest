@@ -1,0 +1,8 @@
+.conditional{
+    display:none;
+}
+
+.hidden{
+    visibility: hidden;
+    position:absolute;
+}

@@ -1,0 +1,63 @@
+.questionblock{
+    display:flex;
+    flex-direction: column;
+}
+
+.question{
+
+}
+
+
+.long {
+    max-width:46em;
+}
+
+.long input{
+    max-width:46em;
+}
+
+.short input{
+    max-width:5em;
+}
+
+label{
+    display:block; 
+    padding-bottom:7px;
+    width:100%;
+}
+/* When things need to be displayed in a single row */
+.row{
+    display: flex;
+    flex-direction:row;
+    width:100%;
+}
+
+
+.row label{
+    display:block;
+    padding-bottom:7px;
+    width:100%;
+}
+
+.row div{
+    padding-right:14px;
+}
+
+.part{
+    display:block;
+    padding-bottom:14px;
+}
+
+/* Because we want the data to "flow" not be tight in a "row" hide all the "rows" versions and show the "flows" versions */
+.smartCondensed {
+    
+}
+
+.noSmartCondensed {
+    display:none !important;
+    visibility: hidden;
+    position:absolute;
+}
+
+
+
