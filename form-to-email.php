@@ -37,17 +37,6 @@
         exit(); 
     } 
     pg_close($conn);
-    //Save to CSV
-	$file = 'results.csv';
-	$list = array($_POST["email"],$_POST["preference"],$preference,$nopreference,$_POST["comments"],$_SESSION["testList"][0],$_SESSION["resultsTime"][0],$_SESSION["testList"][1],$_SESSION["resultsTime"][1]);
-    
-
-	$fp = fopen($file, "a", FILE_APPEND | LOCK_EX);
-	fputcsv($fp, $list);
-	fclose($fp);
-
-
-
 ?>
 
 
