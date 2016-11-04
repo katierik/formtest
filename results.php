@@ -10,7 +10,9 @@
         echo "Error with query: " . $errormessage;
         exit();
     }
-    var_dump($result);
+    while ($row = pg_fetch_row($result)) {
+        var_dump($row);
+    }
 
     pg_close($conn);
 ?>
