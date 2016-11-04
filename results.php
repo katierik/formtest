@@ -25,7 +25,6 @@
     $csv = '';
     while ($row = pg_fetch_row($result)) {
         $part=str_putcsv($row);
-        var_dump($part);
         $csv .= $part;
     }
 
