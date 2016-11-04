@@ -13,7 +13,7 @@
     $csv = fopen('php://memory', 'w');
 
     while ($row = pg_fetch_row($result)) {
-        fputcsv($row);
+        fputcsv($csv, $row);
     }
     pg_close($conn);
     fseek($csv, 0);
