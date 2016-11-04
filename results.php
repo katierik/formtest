@@ -28,7 +28,7 @@
         $csv .= $part;
     }
 
-    $var_dump($csv);
+    var_dump($csv);
 
     pg_close($conn);
 ?>
