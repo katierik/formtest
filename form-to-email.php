@@ -22,7 +22,7 @@
             $nopreference .= $prefList;
         }
     }
-    $query = "INSERT INTO results(email, preference, comments, testlist_1, testlist_1_time, testlist_2, testlist_2_time) VALUES(".pg_escape_string($_POST["email"]).','.pg_escape_string($_POST["preference"]).','.pg_escape_string($_POST["comments"]).','.pg_escape_string($_SESSION["testList"][0]).','.pg_escape_string($_SESSION["resultsTime"][0]).','.pg_escape_string($_SESSION["testList"][1]).','.pg_escape_string($_SESSION["resultsTime"][1]).')';
+    $query = "INSERT INTO results(email, preference, comments, testlist_1, testlist_1_time, testlist_2, testlist_2_time) VALUES(\"".pg_escape_string($_POST["email"]).'\",\"'.pg_escape_string($_POST["preference"]).'\",\"'.pg_escape_string($_POST["comments"]).'\",'.$_SESSION["testList"][0].','.$_SESSION["resultsTime"][0].','.$_SESSION["testList"][1].','.$_SESSION["resultsTime"][1].')';
     
     $result = pg_query($conn, $query); 
 
