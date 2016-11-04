@@ -11,29 +11,23 @@
     $result = pg_query($conn, "select * from pg_stat_activity");
     var_dump($_POST['pref']);
 
-    $preference = '';
-    $nopreference = '';
+    $checkbox = '';
 
     if(!empty($_POST['pref'])) {
         foreach($_POST['pref'] as $prefList){
-            $preference .= $prefList;
+            $checkbox .= $prefList.',';
         }
     }
-    else {
-        $preference = '';
-    }
-
-
-    if(!empty($_POST['nopref'])) {
+    else if(!empty($_POST['nopref'])) {
         foreach($_POST['nopref'] as $prefList){
-            $nopreference .= $prefList;
+            $checkbox .= $prefList.',';
         }
     }
     else {
-        $nopreference = '';
+        $checkbox = '';
     }
 
-    $query = "INSERT INTO results(email, preference, comments, testlist_1, testlist_1_time, testlist_2, testlist_2_time) VALUES('".pg_escape_string($_POST["email"])."','".pg_escape_string($_POST["preference"])."','".pg_escape_string($_POST["comments"])."',".$_SESSION["testList"][0].','.$_SESSION["resultsTime"][0].','.$_SESSION["testList"][1].','.$_SESSION["resultsTime"][1].')';
+    $query = "INSERT INTO results(email, preference, checkbox, comments, testlist_1, testlist_1_time, testlist_2, testlist_2_time) VALUES('".pg_escape_string($_POST["email"])."','".pg_escape_string($_POST["preference"])."','".pg_escape_string($checkbox)."','".pg_escape_string($_POST["comments"])."',".$_SESSION["testList"][0].','.$_SESSION["resultsTime"][0].','.$_SESSION["testList"][1].','.$_SESSION["resultsTime"][1].')';
     var_dump($query); 
     $result = pg_query($conn, $query); 
 
