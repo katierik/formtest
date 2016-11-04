@@ -24,7 +24,7 @@
             $nopreference .= $prefList;
         }
     }
-    $query = "INSERT INTO results(email, preference, comments, testlist_1, testlist_1_time, testlist_2, testlist_2_time) VALUES(".$_POST["email"].','.$_POST["preference"].','.$_POST["comments"].','.$_SESSION["testList"][0].','.$_SESSION["resultsTime"][0].','.$_SESSION["testList"][1].','.$_SESSION["resultsTime"][1]);
+    $query = "INSERT INTO results(email, preference, comments, testlist_1, testlist_1_time, testlist_2, testlist_2_time) VALUES(".$_POST["email"].','.$_POST["preference"].','.$_POST["comments"].','.$_SESSION["testList"][0].','.$_SESSION["resultsTime"][0].','.$_SESSION["testList"][1].','.$_SESSION["resultsTime"][1].')';
 
     $result = pg_query($query); 
 
