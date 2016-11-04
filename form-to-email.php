@@ -7,7 +7,10 @@
     include 'setup.php';
 	$dbopts = parse_url(getenv('DATABASE_URL'));
 	
-	$db = pg_connect('host='.$dbopts["host"].' port='.$dbopts["port"].' user='.$dbopts["user"].' password='.$dbopts["pass"].' dbname='.ltrim($dbopts["path"],'/')); 
+	$conn = pg_connect('host='.$dbopts["host"].' port='.$dbopts["port"].' user='.$dbopts["user"].' password='.$dbopts["pass"].' dbname='.ltrim($dbopts["path"],'/')); 
+    $result = pg_query($conn, "select * from pg_stat_activity");
+    var_dump(pg_fetch_all($result));
+    pg_close($conn);
 
     if(!empty($_POST['pref'])) {
         foreach($_POST['pref'] as $prefList){
