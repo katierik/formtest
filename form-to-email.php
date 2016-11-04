@@ -1,12 +1,13 @@
 <?php
-    //ini_set('display_errors', 1);
-    //ini_set('display_startup_errors', 1);
-   // error_reporting(E_ALL);
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
 	
 	session_start();
     include 'setup.php';
-
-
+	$dbopts = parse_url(getenv('DATABASE_URL'));
+	
+	$db = pg_connect('host='.$dbopts["host"].' port='.$dbopts["port"].' user='.$dbopts["user"].' password='.$dbopts["pass"].' dbname='.ltrim($dbopts["path"],'/') 
 
     if(!empty($_POST['pref'])) {
         foreach($_POST['pref'] as $prefList){
