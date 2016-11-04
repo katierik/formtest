@@ -22,14 +22,15 @@
         echo "Error with query: " . $errormessage;
         exit();
     }
-    $csv = '';
+    $csv = fopen('php://memory', 'w');
+
     while ($row = pg_fetch_row($result)) {
-        $part=str_putcsv($row);
-        $csv .= $part;
+        fputcsv($row);
     }
-
-    var_dump($csv);
-
     pg_close($conn);
+    fseek($csv, 0);
+    header('Content-Type: application/csv');
+    header('Content-Disposition: attachment; filename="results.csv";');
+    fpassthru($f);
 ?>
 
