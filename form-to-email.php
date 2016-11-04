@@ -10,7 +10,6 @@
 	$conn = pg_connect('host='.$dbopts["host"].' port='.$dbopts["port"].' user='.$dbopts["user"].' password='.$dbopts["pass"].' dbname='.ltrim($dbopts["path"],'/')); 
     $result = pg_query($conn, "select * from pg_stat_activity");
     var_dump(pg_fetch_all($result));
-    pg_close($conn);
 
     if(!empty($_POST['pref'])) {
         foreach($_POST['pref'] as $prefList){
@@ -33,7 +32,7 @@
         echo "Error with query: " . $errormessage; 
         exit(); 
     } 
-
+    pg_close($conn);
     //Save to CSV
 	$file = 'results.csv';
 	$list = array($_POST["email"],$_POST["preference"],$preference,$nopreference,$_POST["comments"],$_SESSION["testList"][0],$_SESSION["resultsTime"][0],$_SESSION["testList"][1],$_SESSION["resultsTime"][1]);
