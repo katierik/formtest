@@ -19,6 +19,6 @@
     fseek($csv, 0);
     header('Content-Type: application/csv');
     header('Content-Disposition: attachment; filename="results.csv";');
-    fpassthru($f);
+    fpassthru($csv);
 ?>
 
