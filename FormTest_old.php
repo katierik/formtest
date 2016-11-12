@@ -14,6 +14,9 @@
     //Determining where to go next is in the form action
     $ran = mt_rand();
 
+
+    // IMAGINE CHANGES
+
 ?>
 
 <html>
