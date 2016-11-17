@@ -1,6 +1,5 @@
 <?php
-    $dbopts = parse_url(getenv('DATABASE_URL'));
-    $conn = pg_connect('host='.$dbopts["host"].' port='.$dbopts["port"].' user='.$dbopts["user"].' password='.$dbopts["pass"].' dbname='.ltrim($dbopts["path"],'/'));
+    $conn = pg_connect('host=localhost user=webuser dbname=formtest');
     $query = "SELECT * from results;";
 
     $result = pg_query($conn, $query); 
