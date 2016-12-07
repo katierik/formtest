@@ -61,6 +61,19 @@
                 })
             }
             
+            // Currently ENTER/RETURN submits a form when focuses on checkboxes or radios. Breaks many users mental model of selecting items in a list. Now it selects the item instead.
+            function stopRKey(evt) {
+               var evt = (evt) ? evt : ((event) ? event : null);
+               var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
+                if(evt.keyCode == 13 && $(':focus[type="checkbox"],:focus[type="radio"]')){
+                  $(':focus').click();
+                   return false;
+               }
+            }
+            jQuery.fn.ready(function($){
+              document.onkeypress = stopRKey;   
+            });
+            
         </script>
        
 

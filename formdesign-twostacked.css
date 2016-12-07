@@ -7,15 +7,16 @@ form{
 .questionblock{
     display:flex;
     flex-direction: column;
-    width:47%;
+    /*width:47%;*/
     max-width:550px;
+    min-width:500px;
     margin-right:14px;
 }
 
-.questionblock:nth-child(3n) {
+/*.questionblock:nth-child(3n) {
   page-break-after: always; /* CSS 2.1 syntax */
-  break-after: always; /* New syntax */
-}
+  /*break-after: always; /* New syntax */
+/*}*/
 
 .question{
 

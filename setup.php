@@ -78,10 +78,10 @@
     //Figure out if the user needs to go to a middle page, or to the finish
     function whereTo($count){
         if ($count == 0){
-            return "/middle.php";
+            return "middle.php";
         }
         else{
-            return "/finish.php";
+            return "finish.php";
         }
     }
 
