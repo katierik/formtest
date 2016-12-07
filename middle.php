@@ -37,7 +37,7 @@
         <p>You're half the way there! Next up you will be presented with the same questions in a slightly different layout. </p>
         <p>Try to answer the questions in the same way you did on the last screen.</p>
         
-        <form id="startForm" method="get" action="/FormTest.php">
+        <form id="startForm" method="get" action="FormTest.php">
             <button>Start</button>
         </form>
         

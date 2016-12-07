@@ -39,7 +39,7 @@
         <p>During this study, you will fill in a form containing some information that you should be familiar with: things like your name, what subject you liked in school, and who sits near you in the office. </p>
         <p>You'll fill in the same information twice, with the layout of the form being slightly different each time. At the end of the study, we're going to ask you if you prefer one or the other.</p>
         
-        <form id="startForm" method="get" action="/FormTest.php">
+        <form id="startForm" method="get" action="FormTest.php">
             <button>Start</button>
         </form>
         
