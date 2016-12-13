@@ -98,8 +98,10 @@
             
             <div id="pref" class="aClass">
                 <label for="reason" id="pickedOne">Why did you prefer this layout?</label>
-                <input type="checkbox" id="pref" name="pref[]" value="thiseasy" />This one was easy <br />
-                <input type="checkbox" id="pref" name="pref[]" value="thisfast" />This one was fast <br />
+                <input type="checkbox" id="pref" name="pref[]" value="thiseasy" />It was easy <br />
+                <input type="checkbox" id="pref" name="pref[]" value="thisfast" />It was fast <br />
+                <input type="checkbox" id="pref" name="pref[]" value="thisnatural" />It felt natural <br />
+                <input type="checkbox" id="pref" name="pref[]" value="thispredictable" />It was predictable <br />
                 <input type="checkbox" id="pref" name="pref[]" value="otherdifficult" />The other one was difficult <br />
                 <input type="checkbox" id="pref" name="pref[]" value="otherslow" />The other one was slow <br />
                 <input type="checkbox" id="pref" name="pref[]" value="other" />Other (please explain below) <br />
@@ -115,6 +117,7 @@
                 <input type="checkbox" id="nopref" name="nopref[]" value="bothdifficult" />Both were difficult <br />
                 <input type="checkbox" id="nopref" name="nopref[]" value="bothfast" />Both were fast <br />
                 <input type="checkbox" id="nopref" name="nopref[]" value="bothslow" />Both were slow <br />
+                <input type="checkbox" id="nopref" name="nopref[]" value="bothnatural" />Both felt natural <br />
                 <input type="checkbox" id="nopref" name="nopref[]" value="other" />Other (please explain below) <br />
                 <br />
             </div>
