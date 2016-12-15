@@ -33,11 +33,12 @@
     
     <div id="content">
         
-        <h1>Study: Filling out forms</h1>
-        <p>Thanks for participating in our study. </p>
-        <p>After completing the study you will be entered to win a <strong>$50 Amazon giftcard!</strong></p>
-        <p>During this study, you will fill in a form containing some information that you should be familiar with: things like your name, what subject you liked in school, and who sits near you in the office. </p>
-        <p>You'll fill in the same information twice, with the layout of the form being slightly different each time. At the end of the study, we're going to ask you if you prefer one or the other.</p>
+        <h1>Study: Form efficency</h1>
+        <p>We are studying the efficiency of different form layouts and we would like to get some data from people here at Pega. In this study, you are going to be asked to accurately fill out two forms and you will be timed on each.</p>
+        <p>After completing this study, you will be entered to win a <strong>$100 Amazon gift card!</strong> The winner will be chosen February 1st.</p>
+        <p>You are going to fill out two versions of a form with information with which you should be familiar: your name, colors, and who sits near you in the office. Try to fill this out accurately and quickly</p>
+        <h3>Let's start with a practice.</h3>
+
         
         <form id="startForm" method="get" action="FormTest.php">
             <button>Start</button>
