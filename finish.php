@@ -126,7 +126,7 @@
             <label for="comments">Do you have any other comments?</label>
             <textarea id="comments" name="comments" rows="4" cols="100"></textarea>
             <br/><br/>
-            <label for="email">If you would like to be entered into a drawing for a $50 Amazon giftcard, please enter your email here:</label>
+            <label for="email">If you would like to be entered into a drawing for a $100 Amazon giftcard, please enter your email here:</label>
             <input id="email" name="email" type=email /><br/>
             
             <button>Submit</button>
