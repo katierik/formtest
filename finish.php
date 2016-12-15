@@ -111,8 +111,8 @@
             <div id="nopref" class="aClass">
                 <label for="reason" id="notSure">Why are you not sure?</label>
                 <label for="reason" id="neither" class="hidden">Why did you dislike both?</label>
-                <input type="checkbox" id="nopref" name="nopref[]" value="nodifference" />Couldn’t tell the difference between them <br />
-                <input type="checkbox" id="norem" name="nopref[]" value="noremember" />I don't remember them <br />
+                <input type="checkbox" id="nopref" name="nopref[]" value="nodifference" />Couldn’t tell the difference <br />
+                <input type="checkbox" id="nopref" name="nopref[]" value="noremember" /> I don't remember them <br />
                 <input type="checkbox" id="nopref" name="nopref[]" value="botheasy" />Both were easy <br />
                 <input type="checkbox" id="nopref" name="nopref[]" value="bothdifficult" />Both were difficult <br />
                 <input type="checkbox" id="nopref" name="nopref[]" value="bothfast" />Both were fast <br />
