@@ -71,7 +71,7 @@
     <div id="content">
         
         <h1>Thanks for finishing!</h1>
-        <p>You filled out your information using two different layouts. Before you're finished and entered into a drawing for a $50 Amazon gift card, we have a few questions about these layouts.</p>
+        <p>You filled out your information using two different layouts. Before you're finished and entered into a drawing for a $100 Amazon gift card, we have a few questions about these layouts.</p>
         <div id="choices">
                 <div class="option">
                     <div class="header"><h2>Round 1</h2></div>
@@ -126,7 +126,7 @@
             <label for="comments">Do you have any other comments?</label>
             <textarea id="comments" name="comments" rows="4" cols="100"></textarea>
             <br/><br/>
-            <label for="email">If you would like to be entered into a drawing for a $100 Amazon giftcard, please enter your email here:</label>
+            <label for="email">Enter your email if you'd like to be entered to win a $100 Amazon gift card</label>
             <input id="email" name="email" type=email /><br/>
             
             <button>Submit</button>
