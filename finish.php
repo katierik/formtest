@@ -87,7 +87,7 @@
         
         <form id="preference" name="preference" method="post" action="form-to-email.php"> 
             
-            <label>Which of these form layouts did you prefer?</label>
+            <label>Which of these form layouts did you prefer to fill out?</label>
             <div id="preferenceRadio">
                 <input type="radio" name="preference" value="test<?php echo $_SESSION["testList"][0]?>"> Round 1 <br/>
                 <input type="radio" name="preference" value="test<?php echo $_SESSION["testList"][1]?>"> Round 2 <br />
