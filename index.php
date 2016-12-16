@@ -34,9 +34,9 @@
     <div id="content">
         
         <h1>Study: Form efficency</h1>
-        <p>We are studying the efficiency of different form layouts and we would like to get some data from people here at Pega. In this study, you are going to be asked to accurately fill out two forms and you will be timed on each.</p>
+        <p>In this study, you are going to be asked to accurately fill out two forms and you will be timed on each.</p>
         <p>After completing this study, you will be entered to win a <strong>$100 Amazon gift card!</strong> The winner will be chosen February 1st.</p>
-        <p>You are going to fill out two versions of a form with information with which you should be familiar: your name, colors, and who sits near you in the office. Try to fill this out accurately and quickly</p>
+        <p>You are going to fill out two versions of a form with information with which you should be familiar. Some of them may seem silly. Try to fill this out accurately and quickly. </p>
         <h3>Let's start with a practice.</h3>
 
         
