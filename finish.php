@@ -97,7 +97,7 @@
             <br/>
             
             <div id="pref" class="aClass">
-                <label for="reason" id="pickedOne">Why did you prefer this layout?</label>
+                <label for="reason" id="pickedOne">Why did you prefer this layout? (Pick all that apply)</label>
                 <input type="checkbox" id="pref" name="pref[]" value="thiseasy" />It was easy <br />
                 <input type="checkbox" id="pref" name="pref[]" value="thisfast" />It was fast <br />
                 <input type="checkbox" id="pref" name="pref[]" value="thisnatural" />It felt natural <br />
@@ -109,8 +109,8 @@
             </div>
             
             <div id="nopref" class="aClass">
-                <label for="reason" id="notSure">Why are you not sure?</label>
-                <label for="reason" id="neither" class="hidden">Why did you dislike both?</label>
+                <label for="reason" id="notSure">Why are you not sure? (Pick all that apply)</label>
+                <label for="reason" id="neither" class="hidden">Why did you dislike both? (Pick all that apply)</label>
                 <input type="checkbox" id="nopref" name="nopref[]" value="nodifference" />Couldn’t tell the difference <br />
                 <input type="checkbox" id="nopref" name="nopref[]" value="noremember" /> I don't remember them <br />
                 <input type="checkbox" id="nopref" name="nopref[]" value="botheasy" />Both were easy <br />

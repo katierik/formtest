@@ -40,7 +40,7 @@
 
         
         <form id="startForm" method="get" action="FormTest.php">
-            <button>Start</button>
+            <button>Start test</button>
         </form>
         
         <div id="testError">
