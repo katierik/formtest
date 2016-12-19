@@ -93,7 +93,7 @@
         <form id="preference" name="preference" method="post" action="form-to-email.php"> 
             
 
-            <input id="timezone" type="text" class="hidden">
+            <input id="timezone" name="timezone" type="text">
             
             <label>Which of these form layouts did you prefer to fill out?</label>
           
