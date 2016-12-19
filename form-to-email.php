@@ -57,7 +57,9 @@
     <div class="content" id="setup">
         
         <h1>Thanks!</h1>
-        <p>Thanks for your participation! </p>
+        
+        <h2>Give us your feedback!</h2>
+        <p>Did you find this fun? Frustrating? Help us improve the quality of this test by emailing your comments to marina.miaoulis@pega.com</p>
         
 
         

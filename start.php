@@ -33,14 +33,14 @@
     
     <div id="content">
         
-        <h1>Study: Form efficency</h1>
-        <p>You are going to fill out two versions of a form with information with which you should be familiar. Some of them may seem silly. Try to fill this out accurately and quickly. </p>
-        <p>After completing this study, you will be entered to win a <strong>$100 Amazon gift card!</strong> The winner will be chosen February 1st.</p>
-        <h3>Let's start with a practice.</h3>
+        <h1>Ready to get started?</h1>
+        <p>Excellent!</p>
+        <p>You're going to fill out two forms that are similar to the one you practiced with. There are some questions about you, but we are not saving any of your answers.</p>
+        <p>Try to fill these forms both <strong>accurately and quickly.</strong> The time it takes you to fill these out will be recorded, but don't sacrifice accuracy for time.</p>
 
         
-        <form id="startForm" method="get" action="FormTestPractice.php">
-            <button>Start practice</button>
+        <form id="startForm" method="get" action="FormTest.php">
+            <button>Start test</button>
         </form>
         
         <div id="testError">
