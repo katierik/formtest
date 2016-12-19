@@ -8,8 +8,10 @@
 
     $checkbox = '';
 
-    $zone = pg_escape_string($_POST["timezone"]);
-    echo "$zone";
+    //Geting the timezone and appending it to the comments field
+    $zone = $_POST["timezone"];
+    $_POST["comments"] .= " ZONE:";
+    $_POST["comments"] .= $zone;
 
     if(!empty($_POST['pref'])) {
         foreach($_POST['pref'] as $prefList){
@@ -26,7 +28,7 @@
     }
 
 	$conn = pg_connect('host=localhost user=webuser dbname=formtest'); 
-    $query = "INSERT INTO results(email, preference, checkbox, comments, testlist_1, testlist_1_time, testlist_2, testlist_2_time, timezone) VALUES('".pg_escape_string($_POST["email"])."','".pg_escape_string($_POST["preference"])."','".pg_escape_string($checkbox)."','".pg_escape_string($_POST["comments"])."',".$_SESSION["testList"][0].','.$_SESSION["resultsTime"][0].','.$_SESSION["testList"][1].','.$_SESSION["resultsTime"][1].',hello')';
+    $query = "INSERT INTO results(email, preference, checkbox, comments, testlist_1, testlist_1_time, testlist_2, testlist_2_time) VALUES('".pg_escape_string($_POST["email"])."','".pg_escape_string($_POST["preference"])."','".pg_escape_string($checkbox)."','".pg_escape_string($_POST["comments"])."',".$_SESSION["testList"][0].','.$_SESSION["resultsTime"][0].','.$_SESSION["testList"][1].','.$_SESSION["resultsTime"][1].')';
     $result = pg_query($conn, $query); 
     if (!$result) { 
         $errormessage = pg_last_error(); 
