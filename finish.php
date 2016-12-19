@@ -76,7 +76,7 @@
     <div id="content">
         
         <h1>Thanks for finishing!</h1>
-        <p>You filled out your information using two different layouts. Before you're finished and entered into a drawing for a $50 Amazon gift card, we have a few questions about these layouts.</p>
+        <p>You filled out your information using two different layouts. Before you're finished and entered into a drawing for a $100 Amazon gift card, we have a few questions about these layouts.</p>
         <div id="choices">
                 <div class="option">
                     <div class="header"><h2>Round 1</h2></div>
@@ -92,9 +92,11 @@
         
         <form id="preference" name="preference" method="post" action="form-to-email.php"> 
             
+
             <input id="timezone" type="text" class="hidden">
             
-            <label>Which of these form layouts did you prefer?</label>
+            <label>Which of these form layouts did you prefer to fill out?</label>
+          
             <div id="preferenceRadio">
                 <input type="radio" name="preference" value="test<?php echo $_SESSION["testList"][0]?>"> Round 1 <br/>
                 <input type="radio" name="preference" value="test<?php echo $_SESSION["testList"][1]?>"> Round 2 <br />
@@ -104,7 +106,7 @@
             <br/>
             
             <div id="pref" class="aClass">
-                <label for="reason" id="pickedOne">Why did you prefer this layout?</label>
+                <label for="reason" id="pickedOne">Why did you prefer this layout? (Pick all that apply)</label>
                 <input type="checkbox" id="pref" name="pref[]" value="thiseasy" />It was easy <br />
                 <input type="checkbox" id="pref" name="pref[]" value="thisfast" />It was fast <br />
                 <input type="checkbox" id="pref" name="pref[]" value="thisnatural" />It felt natural <br />
@@ -116,10 +118,10 @@
             </div>
             
             <div id="nopref" class="aClass">
-                <label for="reason" id="notSure">Why are you not sure?</label>
-                <label for="reason" id="neither" class="hidden">Why did you dislike both?</label>
-                <input type="checkbox" id="nopref" name="nopref[]" value="nodifference" />Couldn’t tell the difference between them <br />
-                <input type="checkbox" id="norem" name="nopref[]" value="noremember" />I don't remember them <br />
+                <label for="reason" id="notSure">Why are you not sure? (Pick all that apply)</label>
+                <label for="reason" id="neither" class="hidden">Why did you dislike both? (Pick all that apply)</label>
+                <input type="checkbox" id="nopref" name="nopref[]" value="nodifference" />Couldn’t tell the difference <br />
+                <input type="checkbox" id="nopref" name="nopref[]" value="noremember" /> I don't remember them <br />
                 <input type="checkbox" id="nopref" name="nopref[]" value="botheasy" />Both were easy <br />
                 <input type="checkbox" id="nopref" name="nopref[]" value="bothdifficult" />Both were difficult <br />
                 <input type="checkbox" id="nopref" name="nopref[]" value="bothfast" />Both were fast <br />
@@ -133,7 +135,7 @@
             <label for="comments">Do you have any other comments?</label>
             <textarea id="comments" name="comments" rows="4" cols="100"></textarea>
             <br/><br/>
-            <label for="email">If you would like to be entered into a drawing for a $50 Amazon giftcard, please enter your email here:</label>
+            <label for="email">Enter your email if you'd like to be entered to win a $100 Amazon gift card</label>
             <input id="email" name="email" type=email /><br/>
             
             <button>Submit</button>

@@ -38,7 +38,7 @@
         <p>Try to answer the questions in the same way you did on the last screen.</p>
         
         <form id="startForm" method="get" action="FormTest.php">
-            <button>Start</button>
+            <button>Start test</button>
         </form>
         
         <div id="testError">
