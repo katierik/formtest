@@ -21,6 +21,7 @@
         <link rel="stylesheet" type="text/css" href="controls.css" />
               
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="timezone.js"></script>
        
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         
@@ -29,6 +30,10 @@
         <script>
     
             $( document ).ready(function() {
+                
+                //Calculate timezone
+                document.getElementById("timezone").value = calculate_time_zone();
+                
                 //Hide the no preference checkboxes as we don't need them yet
                 $("#nopref").addClass("hidden");  
                              
@@ -86,6 +91,8 @@
             </div>
         
         <form id="preference" name="preference" method="post" action="form-to-email.php"> 
+            
+            <input id="timezone" type="text" class="hidden">
             
             <label>Which of these form layouts did you prefer?</label>
             <div id="preferenceRadio">
