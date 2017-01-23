@@ -1,9 +1,15 @@
 <?php
     //Finds a random number
     function pickValue(){
-        $min = 0;
-        $max = 5;
+        //This used to pick between 0 and 5, but since I only want to include option 0, 2 & 3, I'm having it pick between 1-3 and changing 1 to 0 if its picked.
+        $min = 1;
+        $max = 3; 
         $test = mt_rand($min,$max);
+        
+        if ($test == 1){
+            $test = 0;
+        }
+        
         
         return $test;
     }
@@ -12,14 +18,12 @@
     function pickTests(){        
         $tests[0] = pickValue();
         $tests[1] = pickValue();
-        $tests[2] = pickValue();
+        //$tests[2] = pickValue();
+        
+        //Get rid of 1, 4, 5
         
         while ($tests[1] == $tests[0]){
             $tests[1] = pickValue();
-        }
-        
-        while ($tests[2] == $tests[0] || $tests[2] == $tests[1]){
-            $tests[2] = pickValue();
         }
         
         return $tests;    
@@ -64,7 +68,7 @@
         //List all images for each test
         $testList[0] = "Everything was primarily displayed in one column, but things like names and addresses were compressed into a single row";
         $testList[1] = "Everything was in one column, and the labels were on the left.";
-        $testList[2] = "Everything was in one column, and it was spaced so that the most could fit on the page.";
+        $testList[2] = "Everything was in one column, and very tightly spaced.";
         $testList[3] = "Everything was in one column, with 'traditional' spacing";
         $testList[4] = "Each section was one column of data, and each section took up 1/2 the screen.";
         $testList[5] = "Everything was presented in two columns.";
